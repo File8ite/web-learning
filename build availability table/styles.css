@@ -1,0 +1,77 @@
+:root{
+  --color0: #32CD32;
+  --color1: #2E8B57;
+  --color2: #228B22;
+  --color3: #556B2F;
+  --color4: #90EE90;
+  --color5: #3CB371;
+  --solid-border: 2px solid black;
+  --dashed-border: 2px dashed black;
+}
+
+body{
+  width: 85vw;
+  height: 85vh;
+  top: 35px;
+  position: relative;
+  font-size: 20px;
+  font-style: sans-serif, "arial";
+}
+
+.available-0{
+  background-color: var(--color0);
+}
+
+.available-1{
+  background-color: var(--color1);
+}
+
+.available-2{
+  background-color: var(--color2);
+}
+
+.available-3{
+  background-color: var(--color3);
+}
+
+.available-4{
+  background-color: var(--color4);
+}
+
+.available-5{
+  background-color: var(--color5);
+}
+
+.sharp td{
+  border-bottom: var(--solid-border);
+}
+
+.half td{
+  border-bottom: var(--dashed-border);
+}
+
+#legend-gradient {
+  background-image: linear-gradient(90deg, var(--color0) 16%, var(--color1) 16% 33%, var(--color2) 33% 49%, var(--color3) 49% 66%, var(--color4) 66% 83%, var(--color5) 83%);
+
+  width: 85%;
+  border: 2px solid black;
+  height: 20px;
+}
+
+
+
+table{
+  width: 100%;
+  height: 50%;
+  left: 35px;
+}
+
+#legend{
+  width: 30%;
+  height: 5%;
+  border: 2px solid black;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 10Px;
+  top: 20px;
+}
