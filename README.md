@@ -17,3 +17,6 @@ I practiced using **CSS variables**, **gradients**, and **responsive design** wh
 - Scalable units (`vh`, `vw`) for responsiveness  
 - Layered background effects  
 
+- **available-table**
+  A FreeCodeCamp workshop project to practice CSS variables by building a styled available table.
+
