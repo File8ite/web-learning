@@ -7,6 +7,7 @@ body{
   margin: 0;
   font-family: sans-serif, vertica;
   width: 100%;
+  background-color: #f4f4f4;
 }
 
 .newspaper-layout{
@@ -22,6 +23,10 @@ body{
 }
 
 .title{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
   grid-area: title;
 }
 
