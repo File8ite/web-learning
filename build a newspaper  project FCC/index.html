@@ -1,43 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-<meta charset="utf-8">
-<title>Newspaper Layout</title>
-<link rel="stylesheet" href="styles.css"/>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
 <body>
-  <main class="newspaper-layout">
-    <header class="title">
-      <h1>We don't just make better pens, We inspire</h1>
+  <div class="grid-container">
+  <header id="header">
+    <nav id="nav-bar">
+      <img id="header-image" src="http://www.w3schools.com/images/img_girl.jpg" />
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how-it-is-done">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
     </header>
-    <article class="feature-article">
-      <h2>Breaking News: Volcano Eruption Disrupts Tourism</h2>
-      <p>Recently, a volcano erupted in a popular tourist destination. The eruption has caused widespread panic and has disrupted tourism in the area. The volcano has been spewing lava and ash for several days now, and authorities are urging residents and tourists to evacuate the area immediately. The eruption has also caused a number of flights to be cancelled, leaving many tourists stranded. The situation is still developing, and authorities are working to contain the eruption and ensure the safety of everyone in the area.</p>
-    </article>
-    <article class="small-article1">
-      <h3>Technology: The Rise of AI</h3>
-      <p>Artificial intelligence (AI) is changing the way we live and work. From self-driving cars to virtual assistants, AI is revolutionizing the world around us. But what exactly is AI, and how does it work? In this article, we'll explore the rise of AI and its impact on society.</p>
-    </article>
-    <article class="small-article2">
-      <h3>The lekki headmaster</h3>
-      <p>The emergence of the headmster at the lekki toll gate school in ibeju lekki has raised a wave of concern across the state and the country at large, looking at the situation things can go a little down he line if we start looking at it i the perspectives that we see things happen in this era.</p>
-    </article>
-    <article class="small-article3">
-      <h3>Max Millian: Who is the new minister ?</h3>
-      <p>The just appointed minister for state took the opporturnity of the wesnesday podcast at the renowned show people and culture to explain the most asked question aroud the counntry, who are you ?. we have never seen you around before where do you come from and this is what he has to say bout that</p>
-    </article>
-    <article class="secondary-article">
-      <h2>What will it be at edo, Apc or LP</h2>
-      <p>
-        while we move around for our daily  business and forth, edo state is currently experiencing a big wave of political tsunami and swivel. the members of APC and LP has vowed to not let the positions go as planned fo the place.
-      </p>
-    </article>
-    <figure class="cover-image">
-      <img src="images/Dr Bosun Tijani.jpg" fetchpriority="high" loading="eager" width="100%" alt="Cover image" />
+    <div class="hero-section">
+    <h1>Day in the life of a Software Engineer | How i got a Job In 2025</h1>
+    </div>
+
+  <div id="features">
+    <figure class="figure1">
+      <iframe src="https://www.youtube.com/embed/pRmqzyV51Ww" title="How I Use AI To Build An App That ACTUALLY Makes Money" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <figcaption><h2>How I Use AI To  Build An App That ACTUALLY  Makes Money</h2>
+      <p>In this episode i made us eof an AI to build an application that makes real money from scratch to producion</p>
+      </figcaption>
     </figure>
-  </main>
+    <figure class="figure2">
+      <iframe src="https://www.youtube.com/embed/uZGuwX3St_c" title="Spring Security JWT: User Sign Up + Login with Email Verification in Spring Boot" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <figcaption><h2>Spring security JWT: User sign up + Login with email verification in spring boot</h2>
+      <p>In this comprehensive tutorial, I will guide you through the process of setting up secure user authentication in a Spring Boot application. You'll learn how to implement user registration, login, and email verification using JWT (JSON Web Tokens). We'll cover essential security configurations with Spring Security, enabling you to protect your application with robust authentication mechanisms. By the end of this tutorial, you'll have a fully functional authentication system, complete with JWT handling and email verification, ready to be integrated into your Spring Boot projects.</p></figcaption>
+    </figure>
+    
+    <figure class="figure3">
+      <iframe src="https://www.youtube.com/embed/JGWabJWC24U" title="My Last Week as an Amazon Software Engineer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <figcaption>
+        <h2>My Last Week As An Amazon Software Engineer</h2>
+        <p>Come with me on my last week as a software engineer intern at Amazon in Toronto! The tech job market is so cooked in 2025, so let's see if I get that return offer...</p>
+      </figcaption>
+    </figure>
+  </div>
+  <div id="how-it-is-done">
+    <div class="hero-section">
+      <h2>How It Is Done</h2>
+    </div>
+    <figure>
+ <iframe id="video" src="https://www.youtube.com/embed/G-aSkfQ8v_E" title="Day in the Life of a Software Engineer | How I Got A Job In 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ </figure>
+ </div>
+  <form id="form" action="https://www.freecodecamp.org/email-submit">
+    <input type="email" id="email" placeholder="name@email.com" name="email" required/>
+
+    <input type="submit" id="submit" value="Get Started"/>
+
+  </form>
+  <div id="pricing">
+    <div class="div-card1"><h3>Tenor Trombone</h3>
+    <p>$600</p>
+    <ul>
+      <li>Good for beginners</li>
+      <li>Excellent sound quality</li>
+      <li>Great for Jazz Bands</li>
+      <li>Nice and shiny</li>
+    </ul>
+</div>
+    <div class="div-card2"><h3>Bass Trombone</h3>
+      <p>$900</p>
+    <ul>
+     <li>Sound quality is unmatched</li>
+     <li>Best for professionals</li>
+     <li>Absolutely stunning</li>
+     <li>Durable and long lasting</li>
+    </ul>
+</div>
+    <div class="div-card3"><h3>Valve Trombone</h3>
+     <p>$1200</p>
+     <ul>
+      <li>Plays similar to a Trumpet</li>
+      <li>Great for Jazz Bands</li>
+      <li>Beautiful in sound and appearance</li>
+      <li>Just amazing</li>
+    </ul>
+</div>
+  </div>
+  <div class="footer">
+    <footer class="footer1">
+      <div class="footer-card1">
+        <ul>
+          <li>Privacy</li>
+        </ul>
+      </div>
+      <div class="footer-card2">
+        <ul>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="footer-card3">
+        <ul>
+          <li>Terms of condition</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  </div>
 </body>
 
 </html>
