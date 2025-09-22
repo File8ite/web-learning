@@ -1,0 +1,58 @@
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+
+}
+
+.space{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  
+}
+
+.earth{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    transform: translate(-50%, -50%);
+   background: linear-gradient(to right, #2a5298, #1e3c72);
+   border-radius:  50%;
+}
+
+
+.orbit{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit 10s linear infinite;
+}
+
+.moon{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: linear-gradient(to right, #E0E5ED, #AEC1DA);
+}
+
+@keyframes orbit{
+  0%{
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  100%{
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
