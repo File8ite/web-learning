@@ -12,12 +12,14 @@ html{
 }
 
 body{
-   padding: 0;
-  margin: 0;
+   padding: 10px;
+  margin: 0 auto;
   font-family: sans-serif, vertica;
-  width: 100%;
-  background-color: midnightblue;
-  color: white;
+  width: 100vw;
+  height: 100vh;
+  line-height: -100px;
+background: linear-gradient(to right, midnightblue, black);
+color: white;
 }
 
 iframe{
@@ -25,17 +27,22 @@ iframe{
   height: 180px;
 }
 
-#header{
-  background-color: gray;
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
   display: flex;
-  flex-flow: row, nowrap;
-  justify-content: space-evenly;
-  font-size: 1.9rem;
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  z-index: 1000; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-bar{
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* ocean blue */ 
+  position: fixed;
+  top: 0;
+  width: 100%;   /* ✅ safer than 100vw */
+  z-index: 1000; /* ✅ makes sure it stays above all content */
 }
 
 h2{
@@ -54,6 +61,8 @@ p{
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 #nav-bar li{
@@ -61,12 +70,10 @@ p{
     font-weight: bold;
   }
 
-.nav-bar{
-  background: #333;
-}
 
 a{
   color: white;
+  text-decoration: none;
 }
 
 .hero-section{
@@ -75,6 +82,7 @@ a{
   padding-top: -3px;
   font-size: 1.9rem;
   flex-wrap: nowrap;
+  padding: 60px 50px;
 }
 
 .hero-section h1{
@@ -83,10 +91,10 @@ a{
 }
 
 .grid-container{
-	display: grid;
+  margin-top: 80px;
+  display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas: 
-  "header header header"
   "hero-section hero-section hero-section"
 	"form form form"
 	"features features features"
@@ -94,7 +102,7 @@ a{
 	"pricing pricing pricing"
   "footer footer footer";
   grid-template-rows: auto;
-  gap: 10px;
+  gap: 60px;
 	}
 
   #header{
@@ -103,48 +111,56 @@ a{
 
   .form{
   grid-area: form;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: "email email email"
-  "submit submit submit";
-  }
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px auto 10px 60px;  }
 
 
   #features{
     grid-area: features;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "figure1"
-    "figure2"
-    "figure3";
+   display: block;
+   word-spacing: normal;
   }
 
   #features .figure1{
-    display: flex;
+    display: block;
     grid-area: figure1;
+    text-align: center;
+    margin: 75px;
   }
 
   #features .figure2{
-    display: flex;
+    display: block;
     grid-area: figure2;
+    text-align: center;
+    margin: 75px;
   }
 
   #features .figure3{
-    display: flex;
+    display: block;
     grid-area: figure3;
+    text-align: center;
+    margin: 75px;
   }
 
   #how-it-is-done{
     grid-area: how-it-is-done;
     margin: 0 auto;
+    
+  }
+
+  .chai{
+   text-align: center;
   }
 
   #pricing{
     grid-area: pricing;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     text-align: center;
+    grid-template-areas: "div-in-pricing1" "div-in-pricing2" "div-in-pricing3";
   }
 
   #pricing li{
@@ -190,19 +206,45 @@ a{
 }
 
 #email{
-  grid-area: email;
   border: px border transparent;
-  padding: 10px;
+  padding: 10px 50px;
+  margin: -50px 0 20px 290px;
+  width: 100%;
   font-size: 1.5rem;  
   background-color: transparent;
   color: white;
+  text-align: left;
 }
 
 #submit{
-  grid-area: submit;
   background-color: green;
   color: white;
-  padding: 13px;
+  padding: 30px 10px 10px 10px;
+  margin: 20px 0px 290px 350px;
+  width: 100%;
   font-size: 1.9rem;
   flex-wrap: nowrap;
+  text-align: center;
+}
+
+@media (max-width: 459px) {
+  #nav-bar ul {
+    flex-direction: row;
+    align-items: center;
+  }
+  iframe {
+    width: 100%;
+    height: 180px;
+  }
+
+  #pricing{
+    grid-area: pricing;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    grid-template-areas: "div-in-pricing1" "div-in-pricing2" "div-in-pricing3";
+  }
+
+
 }
