@@ -1,0 +1,82 @@
+/* Use a universal selector to remove all default margins and padding. This is a common practice to prevent browser inconsistencies. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a consistent font and use padding on the body to push content below the fixed navbar. */
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 60px; /* This value should match your navbar's height */
+}
+
+/* Navbar styles to make it fixed at the top of the viewport. */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: flex-end; /* Aligns links to the right */
+  align-items: center;
+  z-index: 1000; /* Ensures the navbar is always on top of other content */
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 20px;
+}
+
+#navbar a:hover {
+  background-color: #555;
+}
+
+/* Welcome section styles. */
+#welcome-section {
+  height: 100vh; /* Fulfills the user story about the welcome section's height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* Projects section styles. */
+#project-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.project-tile {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 5px;
+  display: block;
+}
+
+/* Contact section styles. */
+#contact-section {
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Query for responsiveness. */
+@media (max-width: 600px) {
+  #navbar {
+    justify-content: center;
+  }
+}
